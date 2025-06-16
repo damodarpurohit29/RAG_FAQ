@@ -25,7 +25,7 @@ GET	/health/	Health check endpoint
 
 Getting Started
 1. Clone the Repository
-git clone https://github.com/yourusername/rag-faq-system.git
+git clone https://github.com/damodarpurohit29/RAG_FAQ.git
 cd rag-faq-system
 2. Set Up Environment
 Python 3.11+ recommended.
