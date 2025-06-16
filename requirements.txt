@@ -1,0 +1,32 @@
+# requirements.txt
+
+# --- Core Libraries ---
+# CRITICAL: Lock NumPy to a version before 2.0 to ensure compatibility.
+numpy<2.0
+
+# --- FastAPI Framework and Server ---
+fastapi==0.111.0
+uvicorn[standard]==0.29.0
+# CRITICAL: Lock httpx to a version compatible with the openai library.
+# This is the definitive fix for the "'proxies' keyword" TypeError.
+httpx>=0.27.0
+
+# --- Data Validation and Settings ---
+pydantic==2.7.1
+pydantic-settings==2.2.1
+
+# --- Database (MongoDB ODM + Async Driver) ---
+beanie==1.26.0
+motor==3.4.0
+pymongo==4.7.2
+
+# --- Vector Search and Embeddings ---
+faiss-cpu==1.8.0
+sentence-transformers==2.7.0
+
+# --- AI Model Integration ---
+openai==1.30.1
+
+# --- Utilities ---
+python-dotenv==1.0.1
+structlog==24.1.0
